@@ -33,7 +33,7 @@ describe('Regression Test Suite', function() {
         
     })
 
-    it('Home Page BT6 pincode test case', function() {
+    it('Home Page not available pincode test case', function() {
         cy.visit(Cypress.env('url'))
         homePage.getTextArea().clear()
         homePage.selectPincode().type(this.homedata.pinCode1).trigger('blur')

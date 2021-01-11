@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-11T12:49:31.399Z",
+    "end": "2021-01-11T12:49:40.281Z",
+    "duration": 8882,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eb7df28c-2f58-4e02-b58a-d3937233df93",
+      "title": "",
+      "fullFile": "cypress/integration/test/Framework.js",
+      "file": "cypress/integration/test/Framework.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "247d96ee-15f7-4bd9-aa0f-de3b3a37b659",
+          "title": "Regression Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Home Page My Location test case",
+              "fullTitle": "Regression Test Suite Home Page My Location test case",
+              "timedOut": null,
+              "duration": 2583,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url'));\nhomePage.getTextArea().trigger('mousedown').click();\nhomePage.getMyLocation().click();\ncy.verifyAddress1();",
+              "err": {},
+              "uuid": "54284de5-5768-4d65-b4b3-6a01f37d36d0",
+              "parentUUID": "247d96ee-15f7-4bd9-aa0f-de3b3a37b659",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Home Page BT6 pincode test case",
+              "fullTitle": "Regression Test Suite Home Page BT6 pincode test case",
+              "timedOut": null,
+              "duration": 2231,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url'));\nhomePage.getTextArea().clear();\nhomePage.selectPincode().type(this.homedata.pinCode).trigger('blur').type('{enter}');\ncy.verifyAddress2();",
+              "err": {},
+              "uuid": "d7fc0f74-4472-4ffe-9d79-b7f82a6c9353",
+              "parentUUID": "247d96ee-15f7-4bd9-aa0f-de3b3a37b659",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Home Page not available pincode test case",
+              "fullTitle": "Regression Test Suite Home Page not available pincode test case",
+              "timedOut": null,
+              "duration": 2550,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url'));\nhomePage.getTextArea().clear();\nhomePage.selectPincode().type(this.homedata.pinCode1).trigger('blur').type('{enter}');\ncy.verifyAddress3();",
+              "err": {},
+              "uuid": "fbe1187d-0eff-4cf1-abf3-5c51f3664d2c",
+              "parentUUID": "247d96ee-15f7-4bd9-aa0f-de3b3a37b659",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "54284de5-5768-4d65-b4b3-6a01f37d36d0",
+            "d7fc0f74-4472-4ffe-9d79-b7f82a6c9353",
+            "fbe1187d-0eff-4cf1-abf3-5c51f3664d2c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7364,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
