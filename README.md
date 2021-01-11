@@ -7,7 +7,7 @@
 **(1) First we have to copy git repository on our local system:**
 
 ```
-git clone https://github.com/kartikeya27/ESOAutomation.git
+git clone https://github.com/kartikeya27/kartikeya27-ESOAutomation.git
 
 ```
 **(2) then type:** 
