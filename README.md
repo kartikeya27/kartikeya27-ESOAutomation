@@ -22,6 +22,7 @@ npm install
 * Run test with default electron browser with:--------> npm run headTest 
 * Run test with chrome browser:----------------------> npm run chromeTest
 * Run test on cypress dashboard with mochawesome reporter:---> npm run recordDashboardTest
+* Run test locally and want to see moachawesome report:---> npm run mochawesome
 
 ```
 ### **Structure about this framework:**
